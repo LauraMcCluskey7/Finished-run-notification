@@ -20,7 +20,7 @@ You must be logged in to the trello account when getting the API key and API tok
 6) Insert the API key, API token and idList into the code into the relevant places in the code 
 
 7) Run:
-   python addcard.py [options]
+   python addcard.py [--runid]
    
    Options:
    --runid     enter the id of the run
