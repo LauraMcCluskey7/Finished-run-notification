@@ -1,0 +1,11 @@
+import requests
+import argparse
+
+parser=argparse.ArgumentParser()
+parser.add_argument("--runid", help="specify runid")
+args=parser.parse_args()
+
+url="<url>"
+querystring={"name": args.runid , "idList":"<idlist>","keepFromSource":"all"}
+response=requests.request("POST", url, params=querystring)
+print(response.text)
